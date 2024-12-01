@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+}
+
+#nickname-container,
+#chat-container {
+    width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nickname-input,
+#message-input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#join-chat-button,
+#send-button {
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#join-chat-button:hover,
+#send-button:hover {
+    background: #0056b3;
+}
+
+#chat-container {
+    display: none;
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+#header .avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#header .username {
+    font-weight: bold;
+}
+
+#header .status {
+    font-style: italic;
+    color: #d1e7dd;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.my-message {
+    background-color: #d1e7dd;
+    align-self: flex-end;
+    margin-left: auto;
+    border-bottom-right-radius: 0;
+}
+
+.other-message {
+    background-color: #f8d7da;
+    align-self: flex-start;
+    margin-right: auto;
+    border-bottom-left-radius: 0;
+}
+
+.notification {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#typing-indicator {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+}

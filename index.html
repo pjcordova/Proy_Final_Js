@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con Socket.io</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="nickname-container">
+        <input id="nickname-input" type="text" placeholder="Ingresa tu nickname">
+        <button id="join-chat-button">Unirse al chat</button>
+    </div>
+    <div id="chat-container">
+        <div id="header">
+            <div class="user-info">
+                <div class="avatar" id="user-avatar"></div>
+                <div class="username" id="user-username"></div>
+            </div>
+            <div class="status" id="user-status">online</div>
+        </div>
+        <div id="messages"></div>
+        <input id="message-input" type="text" placeholder="Escribe tu mensaje...">
+        <button id="send-button">Enviar</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
